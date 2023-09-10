@@ -1,0 +1,20 @@
+[
+    {
+        "Name": "Mapa 1",
+        "Level": 1,
+        "Waves": 5,
+        "Enemies": ["Wrog1", "Wrog2", "Wrog3"]
+    },
+    {
+        "Name": "Mapa 2",
+        "Level": 2,
+        "Waves": 8,
+        "Enemies": ["Wrog4", "Wrog5", "Wrog6"]
+    },
+    {
+        "Name": "Mapa 3",
+        "Level": 3,
+        "Waves": 10,
+        "Enemies": ["Wrog7", "Wrog8", "Wrog9"]
+    }
+]

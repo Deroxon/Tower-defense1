@@ -512,6 +512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 910041811}
+  - component: {fileID: 910041812}
   m_Layer: 0
   m_Name: enemySpawner
   m_TagString: Untagged
@@ -534,6 +535,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &910041812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910041810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f25c0661d94271c478563c2a185acb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1566009041}
+  enemyCount: 5
+  timer: 0
+  spawnRate: 2
 --- !u!1 &1341269700
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +635,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1415166846
+--- !u!1 &1566009041
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,42 +643,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1415166849}
-  - component: {fileID: 1415166848}
-  - component: {fileID: 1415166847}
+  - component: {fileID: 1566009043}
+  - component: {fileID: 1566009042}
+  - component: {fileID: 1566009044}
   m_Layer: 0
-  m_Name: Crocodile_0
+  m_Name: crocodile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1415166847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415166846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 663965bc61494184c9f6d775a542ef68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 889633922}
-  - {fileID: 269544699}
-  - {fileID: 853178760}
-  - {fileID: 1341269701}
-  - {fileID: 2092642569}
-  moveSpeed: 2
---- !u!212 &1415166848
+--- !u!212 &1566009042
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415166846}
+  m_GameObject: {fileID: 1566009041}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -707,21 +705,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1415166849
+--- !u!4 &1566009043
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415166846}
+  m_GameObject: {fileID: 1566009041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1814795, y: 8.647417, z: 0}
+  m_LocalPosition: {x: 3.2592585, y: 6.060946, z: 0.07520905}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1566009044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566009041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 663965bc61494184c9f6d775a542ef68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 889633922}
+  - {fileID: 269544699}
+  - {fileID: 853178760}
+  - {fileID: 1341269701}
+  - {fileID: 2092642569}
+  moveSpeed: 2
 --- !u!1 &2092642568
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,4 +830,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 910041811}
   - {fileID: 318116830}
-  - {fileID: 1415166849}
+  - {fileID: 1566009043}

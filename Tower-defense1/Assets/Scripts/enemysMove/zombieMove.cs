@@ -19,7 +19,8 @@ public class zombieMove : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
-
+        // 
+        gameObject.SetActive(true);
         // Set position of Enemy as position of the first waypoint
         transform.position = waypoints[waypointIndex].transform.position;
     }

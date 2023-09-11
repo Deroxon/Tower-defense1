@@ -19,6 +19,8 @@ public class LevelsLogic : MonoBehaviour
         int Level { get; set; }
         int Waves { get; set; }
         string[] Enemies { get; set; }
+        float FrequencyWaves { get; set; }
+        List<object> DetailEnemies { get; set; }
 
     }
 
@@ -29,15 +31,20 @@ public class LevelsLogic : MonoBehaviour
         public int Level { get; set; }
         public int Waves { get; set; }
         public string[] Enemies { get; set; }
+        public float FrequencyWaves { get; set; }
+        public List<object> DetailEnemies { get; set; }
 
 
-        public void setLevel(string name, int level, int waves, string[] enemies)
+
+        public void setLevel(string name, int level, int waves, string[] enemies, float frequencyWaves, List<object> detailEnemies)
         {
 
             Name = name;
             Level = level;
             Waves = waves;
             Enemies = enemies;
+            FrequencyWaves = frequencyWaves;
+            DetailEnemies = detailEnemies;
 
         }
 
@@ -50,8 +57,8 @@ public class LevelsLogic : MonoBehaviour
 
         if (jsonFile != null)
         {
-            string jsonContent = jsonFile.text;
-            Debug.Log(jsonContent);
+            string Levels = jsonFile.text;
+            Debug.Log(Levels);
 
 
         }

@@ -1,0 +1,122 @@
+[
+    {
+        "Name": "Obiekt1",
+        "healthPoints": 100.0,
+        "currentHealthPoints": 80.0,
+        "moveSpeed": 5.0,
+        "damage": 10.0,
+        "sprite": "sprite1.png"
+    },
+    {
+        "Name": "Obiekt2",
+        "healthPoints": 120.0,
+        "currentHealthPoints": 100.0,
+        "moveSpeed": 6.0,
+        "damage": 12.0,
+        "sprite": "sprite2.png"
+    },
+    {
+        "Name": "Obiekt3",
+        "healthPoints": 80.0,
+        "currentHealthPoints": 60.0,
+        "moveSpeed": 4.0,
+        "damage": 8.0,
+        "sprite": "sprite3.png"
+    },
+    {
+        "Name": "Obiekt4",
+        "healthPoints": 150.0,
+        "currentHealthPoints": 120.0,
+        "moveSpeed": 7.0,
+        "damage": 15.0,
+        "sprite": "sprite4.png"
+    },
+    {
+        "Name": "Obiekt5",
+        "healthPoints": 90.0,
+        "currentHealthPoints": 70.0,
+        "moveSpeed": 5.5,
+        "damage": 9.0,
+        "sprite": "sprite5.png"
+    },
+    {
+        "Name": "Obiekt6",
+        "healthPoints": 110.0,
+        "currentHealthPoints": 90.0,
+        "moveSpeed": 6.5,
+        "damage": 11.0,
+        "sprite": "sprite6.png"
+    },
+    {
+        "Name": "Obiekt7",
+        "healthPoints": 95.0,
+        "currentHealthPoints": 75.0,
+        "moveSpeed": 5.2,
+        "damage": 9.5,
+        "sprite": "sprite7.png"
+    },
+    {
+        "Name": "Obiekt8",
+        "healthPoints": 130.0,
+        "currentHealthPoints": 110.0,
+        "moveSpeed": 6.8,
+        "damage": 13.0,
+        "sprite": "sprite8.png"
+    },
+    {
+        "Name": "Obiekt9",
+        "healthPoints": 75.0,
+        "currentHealthPoints": 60.0,
+        "moveSpeed": 4.5,
+        "damage": 7.5,
+        "sprite": "sprite9.png"
+    },
+    {
+        "Name": "Obiekt10",
+        "healthPoints": 140.0,
+        "currentHealthPoints": 115.0,
+        "moveSpeed": 7.2,
+        "damage": 14.0,
+        "sprite": "sprite10.png"
+    },
+    {
+        "Name": "Obiekt11",
+        "healthPoints": 85.0,
+        "currentHealthPoints": 70.0,
+        "moveSpeed": 5.7,
+        "damage": 8.5,
+        "sprite": "sprite11.png"
+    },
+    {
+        "Name": "Obiekt12",
+        "healthPoints": 160.0,
+        "currentHealthPoints": 130.0,
+        "moveSpeed": 7.5,
+        "damage": 16.0,
+        "sprite": "sprite12.png"
+    },
+    {
+        "Name": "Obiekt13",
+        "healthPoints": 70.0,
+        "currentHealthPoints": 55.0,
+        "moveSpeed": 4.0,
+        "damage": 7.0,
+        "sprite": "sprite13.png"
+    },
+    {
+        "Name": "Obiekt14",
+        "healthPoints": 120.0,
+        "currentHealthPoints": 95.0,
+        "moveSpeed": 6.2,
+        "damage": 12.5,
+        "sprite": "sprite14.png"
+    },
+    {
+        "Name": "Obiekt15",
+        "healthPoints": 100.0,
+        "currentHealthPoints": 80.0,
+        "moveSpeed": 5.0,
+        "damage": 10.0,
+        "sprite": "sprite15.png"
+    }
+]

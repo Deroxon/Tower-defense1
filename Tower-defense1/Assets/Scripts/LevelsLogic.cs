@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,8 @@ public class LevelsLogic : MonoBehaviour
 
     private void Start()
     {
-        readJson();
+        TextAsset jsonFile = Resources.Load<TextAsset>("levels");
+        readJson(jsonFile);
     }
 
     public interface level
@@ -53,21 +55,22 @@ public class LevelsLogic : MonoBehaviour
 
     }
 
-
-    public void readJson()
+    // function that convert json file into string 
+    public string readJson(TextAsset data)
     {
-        TextAsset jsonFile = Resources.Load<TextAsset>("levels");
 
-        if (jsonFile != null)
+        if (data != null)
         {
-            string Levels = jsonFile.text;
+            string Levels = data.text;
             Debug.Log(Levels);
+            return Levels;
 
 
         }
         else
         {
             Debug.LogError("Plik JSON nie zosta³ za³adowany.");
+            return "";
         }
     }
 

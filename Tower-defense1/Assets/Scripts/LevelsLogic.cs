@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,8 @@ public class LevelsLogic : MonoBehaviour
 
     private void Start()
     {
-        readJson();
+        TextAsset jsonFile = Resources.Load<TextAsset>("levels");
+        readJson(jsonFile);
     }
 
     public interface level
@@ -19,6 +21,9 @@ public class LevelsLogic : MonoBehaviour
         int Level { get; set; }
         int Waves { get; set; }
         string[] Enemies { get; set; }
+        float SpawnRate { get; set; }
+        float FrequencyWaves { get; set; }
+        List<object> DetailEnemies { get; set; }
 
     }
 
@@ -29,35 +34,43 @@ public class LevelsLogic : MonoBehaviour
         public int Level { get; set; }
         public int Waves { get; set; }
         public string[] Enemies { get; set; }
+        public float SpawnRate { get; set; }
+        public float FrequencyWaves { get; set; }
+        public List<object> DetailEnemies { get; set; }
 
 
-        public void setLevel(string name, int level, int waves, string[] enemies)
+        // method in class to create new level
+        public void setLevel(string name, int level, int waves, string[] enemies, float frequencyWaves, List<object> detailEnemies, float spawnRate)
         {
 
             Name = name;
             Level = level;
             Waves = waves;
             Enemies = enemies;
+            FrequencyWaves = frequencyWaves;
+            DetailEnemies = detailEnemies;
+            SpawnRate = spawnRate;
 
         }
 
     }
 
-
-    public void readJson()
+    // function that convert json file into string 
+    public string readJson(TextAsset data)
     {
-        TextAsset jsonFile = Resources.Load<TextAsset>("levels");
 
-        if (jsonFile != null)
+        if (data != null)
         {
-            string jsonContent = jsonFile.text;
-            Debug.Log(jsonContent);
+            string Levels = data.text;
+            Debug.Log(Levels);
+            return Levels;
 
 
         }
         else
         {
             Debug.LogError("Plik JSON nie zosta³ za³adowany.");
+            return "";
         }
     }
 

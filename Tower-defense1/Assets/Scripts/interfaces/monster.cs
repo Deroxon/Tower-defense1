@@ -17,3 +17,16 @@ public interface Monster
 
 }
 
+public class MonsterClass : Monster
+{
+    public string Name { get; set; }
+    public float healthPoints { get; set; }
+    public float currentHealthPoints { get; set; }
+    public float moveSpeed { get; set; }
+    public float damage { get; set; }
+
+    public Sprite? sprite { get; set; }
+
+
+
+}

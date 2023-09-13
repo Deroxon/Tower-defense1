@@ -4383,6 +4383,7 @@ GameObject:
   - component: {fileID: 2053279822}
   - component: {fileID: 2053279821}
   - component: {fileID: 2053279824}
+  - component: {fileID: 2053279825}
   m_Layer: 0
   m_Name: building sign_0
   m_TagString: buildField
@@ -4519,6 +4520,21 @@ MonoBehaviour:
   optionBuyTree: {fileID: 1866242986}
   isMenuOpen: 0
   treeSprite: {fileID: 1680845280, guid: c4b9d22babbd89c47be179a1cc22271a, type: 3}
+--- !u!114 &2053279825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053279819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a64421903eed64abfdca4a4b019a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 1651592990, guid: 576b884ef11ed7547825ea540a4fa3e6, type: 3}
+  originalSprite: {fileID: -382827015, guid: 576b884ef11ed7547825ea540a4fa3e6, type: 3}
+  grabGameObject: {fileID: 2053279819}
 --- !u!1 &2092642568
 GameObject:
   m_ObjectHideFlags: 0

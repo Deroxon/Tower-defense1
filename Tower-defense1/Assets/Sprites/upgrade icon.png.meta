@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c4b9d22babbd89c47be179a1cc22271a
+guid: 53d931007f7ccc740988c4babdb8c2db
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wooden tower_0
+      name: upgrade icon_0
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5828fe78a50e3fe44a51dbfff5b5539f
-      internalID: 1680845280
+      spriteID: 54023848e3bbee345bef1cac1c35d611
+      internalID: -1184546929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden tower_1
+      name: upgrade icon_1
       rect:
         serializedVersion: 2
         x: 32
         y: 64
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,50 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be693aa4053d3ea41b59a52b9887a5e7
-      internalID: -418897261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wooden tower_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4826df2ea2e7f1a4db09274f27e45832
-      internalID: -1604283251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wooden tower_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41a1192caa8e914428a1ba414b79b4a2
-      internalID: 795262448
+      spriteID: de1c41d163c1a0c46816bc2eb70bd3e9
+      internalID: 2027757002
       vertices: []
       indices: 
       edges: []
@@ -204,10 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wooden tower_0: 1680845280
-      wooden tower_1: -418897261
-      wooden tower_2: -1604283251
-      wooden tower_3: 795262448
+      upgrade icon_0: -1184546929
+      upgrade icon_1: 2027757002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

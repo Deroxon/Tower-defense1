@@ -18,6 +18,9 @@ public class enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /* this part of code doesnt work beacuse we cannot import any package, beacuse in compiler they are automatically deleted so for now, code will be commented
+         and maybe use in the future
+          */
         // getting list of enemies
         TextAsset EnemyList = Resources.Load<TextAsset>("enemyList");
 
@@ -26,10 +29,13 @@ public class enemy : MonoBehaviour
 
         Debug.Log("halo " + data);
 
-        // to nie działa, do poprawy!! musisz deserializować dane na podstawie prawdopodobnie klasy monster, póki co mamy stworzony interface
-        // Monster monstersData = JsonSerializer.Deserialize<MonsterClass>(data);
+        // to correct
+        Monster monsterData = JsonUtility.FromJson<MonsterClass>(data);
 
-        // Debug.Log(monstersData);
+         Debug.Log(monsterData);
+       
+
+
 
     }
 

@@ -56,6 +56,7 @@ public class LevelsLogic : MonoBehaviour
     }
 
     // function that convert json file into string 
+    // its working but we dont use them beacuse we have problem with import package to deserialize the string
     public string readJson(TextAsset data)
     {
 

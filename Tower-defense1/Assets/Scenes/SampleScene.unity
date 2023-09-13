@@ -485,7 +485,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3612,6 +3612,7 @@ GameObject:
   - component: {fileID: 1415166847}
   - component: {fileID: 1415166850}
   - component: {fileID: 1415166851}
+  - component: {fileID: 1415166852}
   m_Layer: 0
   m_Name: Crocodile_0
   m_TagString: Untagged
@@ -3743,6 +3744,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1415166846}
   tak: {fileID: 0}
+--- !u!95 &1415166852
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415166846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a555c422a7dc1ef4ebf2b6a1fc211dea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1735862043
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,6 +4383,7 @@ GameObject:
   - component: {fileID: 2053279822}
   - component: {fileID: 2053279821}
   - component: {fileID: 2053279824}
+  - component: {fileID: 2053279825}
   m_Layer: 0
   m_Name: building sign_0
   m_TagString: buildField
@@ -4496,7 +4519,22 @@ MonoBehaviour:
   buildPlace: {fileID: 2053279819}
   optionBuyTree: {fileID: 1866242986}
   isMenuOpen: 0
-  treeSprite: {fileID: 1901025915, guid: c4b9d22babbd89c47be179a1cc22271a, type: 3}
+  treeSprite: {fileID: 1680845280, guid: c4b9d22babbd89c47be179a1cc22271a, type: 3}
+--- !u!114 &2053279825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053279819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a64421903eed64abfdca4a4b019a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 1651592990, guid: 576b884ef11ed7547825ea540a4fa3e6, type: 3}
+  originalSprite: {fileID: -382827015, guid: 576b884ef11ed7547825ea540a4fa3e6, type: 3}
+  grabGameObject: {fileID: 2053279819}
 --- !u!1 &2092642568
 GameObject:
   m_ObjectHideFlags: 0

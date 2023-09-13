@@ -1,4 +1,5 @@
-[
+{
+ "monsters":[
     {
         "Name": "Obiekt1",
         "healthPoints": 100.0,
@@ -119,4 +120,5 @@
         "damage": 10.0,
         "sprite": "sprite15.png"
     }
-]
+ ]
+}

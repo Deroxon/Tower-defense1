@@ -29,12 +29,18 @@ public class enemy : MonoBehaviour
 
         Debug.Log("halo " + data);
 
-        // to correct
-        Monster monsterData = JsonUtility.FromJson<MonsterClass>(data);
+        // to correct the way to make it from json
+        MonsterData monsterData = JsonUtility.FromJson<MonsterData>(data);
 
-         Debug.Log(monsterData);
-       
+        Debug.Log(monsterData.monsters[9]);
 
+   
+            foreach (var monster in monsterData.monsters)
+            {
+                Debug.Log($"Name: {monster.Name}, Health: {monster.healthPoints}");
+            }
+
+ 
 
 
     }

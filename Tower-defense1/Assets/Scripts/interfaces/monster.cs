@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public interface Monster
 {
     string Name { get; set; }
@@ -11,7 +12,7 @@ public interface Monster
     float moveSpeed { get; set; }
     float damage { get; set; }
 
-    Sprite? sprite { get; set; }
+    string sprite { get; set; }
 
 
 
@@ -25,8 +26,13 @@ public class MonsterClass : Monster
     public float moveSpeed { get; set; }
     public float damage { get; set; }
 
-    public Sprite? sprite { get; set; }
+    public string sprite { get; set; }
 
 
 
+}
+
+public class MonsterData
+{
+    public MonsterClass[] monsters;
 }

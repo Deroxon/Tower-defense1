@@ -7,6 +7,7 @@ public class buildTower : MonoBehaviour
 {
     public GameObject buildPlace;
     public GameObject optionBuyTree;
+    public GameObject optionBuyTree2;
     public bool isMenuOpen = false;
     public Sprite treeSprite;
     private SpriteRenderer spriteRenderer;
@@ -16,6 +17,7 @@ public class buildTower : MonoBehaviour
     {
         // find a child component 'buyTreeTower'
         optionBuyTree = buildPlace.transform.Find("buyTreeTower").gameObject;
+        optionBuyTree2 = buildPlace.transform.Find("buyTreeTower2").gameObject;
         spriteRenderer = GetComponent<SpriteRenderer>();
        
     }
@@ -48,6 +50,10 @@ public class buildTower : MonoBehaviour
                 optionBuyTree.SetActive(true);
                 isMenuOpen = true;
                //Debug.Log("clicked");
+
+                optionBuyTree2.SetActive(true);
+                isMenuOpen = true;
+                //Debug.Log("clicked");
             }
 
         }
@@ -72,6 +78,7 @@ public class buildTower : MonoBehaviour
         if(isMenuOpen)
         {
             optionBuyTree.SetActive(false);
+            optionBuyTree2.SetActive(false);
         }
         
     }

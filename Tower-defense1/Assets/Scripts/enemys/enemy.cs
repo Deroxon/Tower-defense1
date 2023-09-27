@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-//using System.Text.Json;
+using System.Linq;
 using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
     public GameObject Enemy;
-    public Monster EnemyStats;
-    string EnemyList;
-    public GameObject tak;
+    public MonsterClass EnemyStats;
+    private SpriteRenderer spriteRenderer;
+    
+
+    public List<MonsterClass> MobsList = new List<MonsterClass>();
 
     void createEnemy() 
     {
@@ -19,21 +21,39 @@ public class enemy : MonoBehaviour
     void Start()
     {
         // getting list of enemies
-        TextAsset EnemyList = Resources.Load<TextAsset>("enemyList");
+        // TextAsset EnemyList = Resources.Load<TextAsset>("enemyList");
 
         // using function in LevelsLogic to readJson
-        string data =  GetComponent<LevelsLogic>().readJson(EnemyList);
+        // string data =  GetComponent<LevelsLogic>().readJson(EnemyList);
 
-        Debug.Log("halo " + data);
+        // getting spriteRenderer
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // to nie działa, do poprawy!! musisz deserializować dane na podstawie prawdopodobnie klasy monster, póki co mamy stworzony interface
-        // Monster monstersData = JsonSerializer.Deserialize<MonsterClass>(data);
+        // getting sprite from sprite Renderer
+        Sprite sprite = spriteRenderer.sprite;
 
-        // Debug.Log(monstersData);
+        // getting string
+        string sprit = sprite.name.ToLower();
+
+        Debug.Log(sprit);
+
+        MobsList = GetComponent<LevelsLogic>().InitialMonsters();
+
+        Debug.Log(MobsList[0].Name);
+
+        // finding monster
+        MonsterClass EnemyStats = MobsList.Find(monster => sprit.Contains(monster.Name));
+
+
+        Debug.Log(EnemyStats.Name);
+
+
+
+
 
     }
 
 
 
- 
+
 }

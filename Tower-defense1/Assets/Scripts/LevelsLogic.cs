@@ -7,6 +7,8 @@ public class LevelsLogic : MonoBehaviour
 {
     public List<object> Levels = new List<object>();
 
+
+
     string jsonContent;
 
     private void Start()
@@ -72,6 +74,75 @@ public class LevelsLogic : MonoBehaviour
             Debug.LogError("Plik JSON nie zosta³ za³adowany.");
             return "";
         }
+    }
+
+
+    public List<MonsterClass> InitialMonsters()
+    {
+
+        List<MonsterClass> monsterList = new List<MonsterClass>()
+        {
+            new MonsterClass
+            {
+                Name = "crocodile",
+                healthPoints = 100.0f,
+                currentHealthPoints = 100.0f,
+                moveSpeed = 5.0f,
+                damage = 10.0f,
+                sprite = "sprite1.png"
+            },
+            new MonsterClass
+            {
+                Name = "goblin",
+                healthPoints = 100.0f,
+                currentHealthPoints = 80.0f,
+                moveSpeed = 5.0f,
+                damage = 10.0f,
+                sprite = "sprite1.png"
+            },
+            new MonsterClass
+            {
+                Name = "frog",
+                healthPoints = 100.0f,
+                currentHealthPoints = 80.0f,
+                moveSpeed = 5.0f,
+                damage = 10.0f,
+                sprite = "sprite1.png"
+            },
+            new MonsterClass
+            {
+                Name = "obiekt1",
+                healthPoints = 100.0f,
+                currentHealthPoints = 80.0f,
+                moveSpeed = 5.0f,
+                damage = 10.0f,
+                sprite = "sprite1.png"
+            },
+            new MonsterClass
+            {
+                Name = "obiekt1",
+                healthPoints = 100.0f,
+                currentHealthPoints = 80.0f,
+                moveSpeed = 5.0f,
+                damage = 10.0f,
+                sprite = "sprite1.png"
+            },
+            new MonsterClass
+            {
+                Name = "obiekt1",
+                healthPoints = 100.0f,
+                currentHealthPoints = 80.0f,
+                moveSpeed = 5.0f,
+                damage = 10.0f,
+                sprite = "sprite1.png"
+            },
+
+        };
+
+
+        return monsterList;
+
+
     }
 
 

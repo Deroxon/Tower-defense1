@@ -11,12 +11,12 @@ public interface Monster
     float moveSpeed { get; set; }
     float damage { get; set; }
 
-    Sprite? sprite { get; set; }
+    string sprite { get; set; }
 
 
 
 }
-
+[System.Serializable]
 public class MonsterClass : Monster
 {
     public string Name { get; set; }
@@ -25,8 +25,12 @@ public class MonsterClass : Monster
     public float moveSpeed { get; set; }
     public float damage { get; set; }
 
-    public Sprite? sprite { get; set; }
+    public string sprite { get; set; }
 
 
 
 }
+
+
+
+

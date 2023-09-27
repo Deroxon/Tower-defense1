@@ -48,9 +48,23 @@ public class enemy : MonoBehaviour
         Debug.Log(EnemyStats.Name);
 
 
+        // setting move speed of Enemy
+        GetComponent<zombieMove>().setMoveSpeed(EnemyStats.moveSpeed);
 
+        Debug.Log(EnemyStats.currentHealthPoints);
+    }
 
+    // need to be fixed
+     void Update()
+    {
+        Debug.Log(EnemyStats.currentHealthPoints);
+        EnemyStats.currentHealthPoints = EnemyStats.currentHealthPoints - 0.05f;
+        Debug.Log(EnemyStats.currentHealthPoints);
 
+        if(EnemyStats.currentHealthPoints <= 0f )
+        {
+            Destroy(Enemy);
+        }
     }
 
 

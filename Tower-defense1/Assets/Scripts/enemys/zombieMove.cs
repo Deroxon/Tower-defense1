@@ -55,4 +55,11 @@ public class zombieMove : MonoBehaviour
             }
         }
     }
+
+
+    public void setMoveSpeed(float moveSpeeds)
+    {
+        moveSpeed = moveSpeeds;
+    }
+
 }

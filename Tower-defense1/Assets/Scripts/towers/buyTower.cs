@@ -17,6 +17,8 @@ public class buyTower : MonoBehaviour
     private void OnMouseDown()
     {
         buildPlace.GetComponent<buildTower>().createTower("treeTower");
+
+
         //Debug.Log("kup drewno");
     }
     // Update is called once per frame

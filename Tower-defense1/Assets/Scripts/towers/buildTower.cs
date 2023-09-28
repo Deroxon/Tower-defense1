@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class buildTower : MonoBehaviour
@@ -59,17 +60,29 @@ public class buildTower : MonoBehaviour
         }
     }
 
-    public void createTower( string typeTower)
+    public void createTower(string typeTower)
     {
 
         switch (typeTower)
         {
-            case "treeTower": {
+            case "treeTower":
+                {
                     spriteRenderer.sprite = treeSprite;
-            }
+                }
                 break;
         }
-       
+
+        // changing tower to active to make the possible to attack
+        buildPlace.tag = "activeTower";
+
+        buildPlace.AddComponent<TowerLogic>();
+
+
+       // adding prefab to this script
+       // GetComponent<TowerLogic>().bulletPrefab = Resources.Load<GameObject>("Prefabs/stone");
+
+      
+
 
     }
 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - buildField
   - treeTower
+  - activeTower
+  - enemies
   layers:
   - Default
   - TransparentFX
